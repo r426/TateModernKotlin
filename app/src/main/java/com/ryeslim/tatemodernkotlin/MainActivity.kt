@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.*
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -27,10 +28,8 @@ class MainActivity : AppCompatActivity() {
 
         answeredQuestion[0] = true //yes, now Question 1 is answered
 
-        val radioGroup = findViewById(R.id.radio_group_1) as RadioGroup
         //checks if the answer is correct
-        val radioButton1 = findViewById(R.id.answer_1_3) as RadioButton
-        if (radioGroup.getCheckedRadioButtonId() == radioButton1.getId())
+        if (radio_group_1.getCheckedRadioButtonId() == answer_1_3.getId())
             point[0] = 1
         else
             point[0] = 0
@@ -45,11 +44,8 @@ class MainActivity : AppCompatActivity() {
 
         answeredQuestion[1] = true //yes, now Question 1 is answered
 
-        val radioGroup = findViewById(R.id.radio_group_2) as RadioGroup
-
         //checks if the answer is correct
-        val radioButton2 = findViewById(R.id.answer_2_1) as RadioButton
-        if (radioGroup.getCheckedRadioButtonId() == radioButton2.getId())
+        if (radio_group_2.getCheckedRadioButtonId() == answer_2_1.getId())
             point[1] = 1
         else
             point[1] = 0
@@ -64,16 +60,9 @@ class MainActivity : AppCompatActivity() {
 
         answeredQuestion[2] = true //yes, now Question 3 is answered
 
-        val answer_3_1 = findViewById(R.id.answer_3_1) as CheckBox
         val answer_3_1_Chosen = answer_3_1.isChecked()
-
-        val answer_3_2 = findViewById(R.id.answer_3_2) as CheckBox
         val answer_3_2_Chosen = answer_3_2.isChecked()
-
-        val answer_3_3 = findViewById(R.id.answer_3_3) as CheckBox
         val answer_3_3_Chosen = answer_3_3.isChecked()
-
-        val answer_3_4 = findViewById(R.id.answer_3_4) as CheckBox
         val answer_3_4_Chosen = answer_3_4.isChecked()
 
         // checks if the answer is correct
@@ -92,8 +81,7 @@ class MainActivity : AppCompatActivity() {
 
         answeredQuestion[3] = true //yes, now Question 4 is answered
 
-        val answer_4 = findViewById(R.id.answer_4) as EditText
-        val answer_4_Correct = answer_4.getText().toString()
+        val answer_4_Correct = answer_4.text.toString()
         if (answer_4_Correct.trim({ it <= ' ' }) == "2016")
         // trims spaces and checks if the answer is correct
             point[3] = 1
@@ -129,4 +117,3 @@ class MainActivity : AppCompatActivity() {
         return
     }
 }
-
