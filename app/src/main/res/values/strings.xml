@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Tate Modern Quiz</string>
+    <string name="introText">Did you know that Tate Modern is housed within a converted power station, which was originally designed by Sir Giles Gilbert Scott, the creator of the iconic red telephone box? Do a short quiz to learn more!</string>
+    <string name="question_1">1. The gallery is in</string>
+    <string name="answer_1_1">Oxford</string>
+    <string name="answer_1_2">Melbourne</string>
+    <string name="answer_1_3">London</string>
+    <string name="answer_1_4">Edinburgh</string>
+    <string name="question_2">2. The height of its Turbine Hall is </string>
+    <string name="answer_2_1">26 m</string>
+    <string name="answer_2_2">72 m</string>
+    <string name="answer_2_3">38 m</string>
+    <string name="answer_2_4">18 m</string>
+    <string name="question_3">3. The collections of Tate Modern include works of these artists:</string>
+    <string name="answer_3_1">Pablo Picasso</string>
+    <string name="answer_3_2">Leonardo da Vinci</string>
+    <string name="answer_3_3">Claude Monet</string>
+    <string name="answer_3_4">Michelangelo</string>
+    <string name="question_4">4. The ten-storey Switch House opened to the public in</string>
+    <string name="questions_omitted">Please answer all questions.</string>
+    <string name="encouragement_0">\nDon\'t give up.</string>
+    <string name="encouragement_1">\nWell begun, half done.</string>
+    <string name="encouragement_2">\nFifty fifty.</string>
+    <string name="encouragement_3">\nNext to perfect.</string>
+    <string name="encouragement_4">\nImpressive.</string>
+    <string name="encouragement_to_all">\nKeep learning!</string>
+</resources>
